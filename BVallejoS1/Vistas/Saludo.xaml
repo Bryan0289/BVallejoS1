@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BVallejoS1.Vistas.Saludo"
+             Title="Saludo">
+    <ScrollView>
+        <VerticalStackLayout
+        Padding="30,0"
+        Spacing="25">
+
+            <Label
+            Text="Mi primer Programa con MAUI"
+            Style="{StaticResource Headline}"
+            SemanticProperties.HeadingLevel="Level1" />
+
+            <Entry 
+            x:Name="txtNombre"
+            Placeholder="Ingrese su Nombre"
+            Keyboard="Chat"
+            />
+
+            <Entry 
+            x:Name="txtAnio"
+            Keyboard="Numeric"
+            MaxLength="4"
+            Placeholder="Ingrese su Año de Nacimiento"
+            />
+
+            <Button
+            x:Name="BtnS"
+            Text="Saludar" 
+            Clicked="OnSaludar"
+            HorizontalOptions="Fill" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
